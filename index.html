@@ -8,7 +8,7 @@
 <meta property="og:title" content="Matthew Seo">
 <meta property="og:description" content="CS at Virginia Tech, co-founder of Flint.">
 <meta property="og:url" content="https://matthewseo.me">
-<link rel="icon" href="assets/app-icon.png">
+<link rel="icon" href="assets/flint-t.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
   <!-- hero: hairline cell grid -->
   <section class="hero" aria-label="Intro">
     <div class="cell plus"></div>
-    <div class="cell"><img class="icon" src="assets/app-icon.png" alt="Flint app icon" width="56" height="56"></div>
+    <div class="cell"><img class="icon" src="assets/flint-t.svg" alt="Flint logo" width="641" height="1384"></div>
     <div class="cell"></div>
     <div class="cell plus"></div>
     <div class="cell mono-stack" aria-hidden="true"><span>37.23°N</span><span>80.42°W</span></div>
@@ -72,6 +72,9 @@
     <a class="tile tile-center" href="#wit" data-label="wit">
       <svg viewBox="0 0 120 40" class="scribble" aria-hidden="true"><path d="M4 28c10-18 18-20 22-8s8 14 14 0 10-16 16-4 6 14 14 4 12-14 18-6 8 10 16 4 10-6 12-4" fill="none" stroke="#e5484d" stroke-width="2.2" stroke-linecap="round"/></svg>
     </a>
+    <a class="tile" href="#oyster" data-label="Oyster">
+      <span class="big">Oys</span><span class="dot night"></span>
+    </a>
     <a class="tile" href="#activities" data-label="CyberPatriot">
       <span class="big">Gold</span>
     </a>
@@ -106,6 +109,27 @@
         <li>Consent-driven UX that separates seeing a pool from spending it — merchant details redacted by default, step-up auth on risky actions.</li>
         <li>$1k+ raised, 100+ person pre-release waitlist, incorporated as a Delaware C-Corp.</li>
       </ul>
+    </article>
+
+    <article id="oyster" class="card wide-left">
+      <div class="frame frame-oyster" aria-hidden="true">
+        <ul class="scan">
+          <li><span>process</span><span>unsigned binary listening on :4444</span><b class="hi">high</b></li>
+          <li><span>software</span><span>outdated package with known CVE</span><b class="md">medium</b></li>
+          <li><span>file</span><span>YARA match in ~/Downloads</span><b class="md">medium</b></li>
+          <li><span>cleanup</span><span>3.2 GB of caches</span><b>info</b></li>
+        </ul>
+        <p class="explain">“This program accepts connections from other machines and isn't signed by a known developer. Quarantine it — you can restore it later.”</p>
+      </div>
+      <div class="meta">
+        <div>
+          <h3><a href="https://github.com/mseo0/Oyster">Oyster</a></h3>
+          <p class="sub">Local antivirus · macOS &amp; Windows · 2026</p>
+        </div>
+        <span class="tag">Open source</span>
+      </div>
+      <p class="desc">An antivirus that never phones home. It scans files, running processes and installed software for vulnerabilities, then a local LLM explains each finding in plain English. Runs on an 8 GB laptop. Delete means a restorable quarantine.</p>
+      <p class="stack">Python · Electron · ClamAV · YARA · Ollama</p>
     </article>
 
     <div class="pair">
@@ -155,14 +179,24 @@
     </article>
   </section>
 
+  <!-- more projects: dense list -->
+  <section id="more" class="list">
+    <h2 class="label">More projects</h2>
+    <ul>
+      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/vorssaint-utils">vorssaint-utils</a></b> — contributed a Paperclip crew card with animated agent avatars to an open-source macOS menu bar toolkit</span><span class="where">Swift</span></li>
+      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/kiro-local-routing-autocompact">Kiro local routing</a></b> — routes spec-coding tasks to a local Ollama model, escalating when tests fail, with auto-compact hooks</span><span class="where">Shell</span></li>
+      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/priceCLI">priceCLI</a></b> — paste a wall of shopping links, get scraped sale prices and a total in the terminal</span><span class="where">Node.js</span></li>
+      <li><span class="when">2026</span><span class="what"><b><a href="https://pingpongcounter.matt-seo-6da.workers.dev/">Ping Pong Counter</a></b> — voice-controlled scoreboard with fuzzy matching for misheard commands, property-tested with fast-check</span><span class="where">TypeScript</span></li>
+      <li><span class="when">2024</span><span class="what"><b><a href="https://sstray.itch.io/tank-tycoon">Tank Tycoon</a></b> — aquarium tycoon game built in Godot with a classmate; upgrades, fish, SFX and music</span><span class="where">GDScript</span></li>
+    </ul>
+  </section>
+
   <!-- experience: dense list -->
   <section id="activities" class="list">
     <h2 class="label">Experience &amp; activities</h2>
     <ul>
       <li><span class="when">Now</span><span class="what">Co-Founder, <b>Flint</b></span><span class="where">payflint.app</span></li>
-      <li><span class="when">2026</span><span class="what">Pool Server, <b>Country Club of Fairfax</b></span><span class="where">Fairfax, VA</span></li>
       <li><span class="when">2023–25</span><span class="what">Lead Team Member, <b>CyberPatriot</b> — Gold-tier national semifinalist; secured network configs in Cisco Packet Tracer under competition conditions</span><span class="where">Cisco</span></li>
-      <li><span class="when">2022–25</span><span class="what">Intl. Business &amp; Development Intern, <b>Leadership Initiatives</b> — raised $1.5k+ for small businesses in Nigeria; designed brochures and logos for partners</span><span class="where">Remote</span></li>
       <li><span class="when">2025–28</span><span class="what">B.S. Computer Science, <b>Virginia Tech</b> — GPA 3.76</span><span class="where">Blacksburg, VA</span></li>
     </ul>
   </section>
