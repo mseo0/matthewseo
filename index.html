@@ -4,15 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Matthew Seo</title>
-<meta name="description" content="Matthew Seo — CS at Virginia Tech, co-founder of Flint.">
+<meta name="description" content="Computer science at Virginia Tech. Co-founder of Flint.">
 <meta property="og:title" content="Matthew Seo">
 <meta property="og:description" content="CS at Virginia Tech, co-founder of Flint.">
 <meta property="og:url" content="https://matthewseo.me">
-<link rel="icon" href="assets/flint-t.svg" type="image/svg+xml">
+<meta property="og:image" content="https://matthewseo.me/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/m.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="bubbles.js" defer></script>
 </head>
 <body>
 
@@ -34,7 +37,7 @@
     <div class="cell mono-stack" aria-hidden="true"><span>37.23°N</span><span>80.42°W</span></div>
     <div class="cell"></div>
     <div class="cell"></div>
-    <div class="cell vlabel" aria-hidden="true">Engineer &amp; Founder</div>
+    <div class="cell" aria-hidden="true"><span class="vlabel">Engineer &amp; Founder</span></div>
 
     <h1 class="name"><span class="bloom" aria-hidden="true"></span>Matthew <em>Seo</em></h1>
 
@@ -48,7 +51,7 @@
       <svg class="glyph" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11h10M1 11V1M3 9l2-2 2 1 4-5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
     </div>
 
-    <div class="cell"></div>
+    <div class="cell hint" aria-hidden="true">( click a + )</div>
     <div class="cell plus"></div>
     <div class="cell"></div>
     <div class="cell"></div>
@@ -63,10 +66,10 @@
     <a class="tile" href="#flint" data-label="Flint">
       <span class="big">Flint</span><span class="dot night"></span>
     </a>
-    <a class="tile" href="#eduai" data-label="EduAI — VT Kiro Hackathon">
+    <a class="tile" href="#eduai" data-label="EduAI">
       <span class="big">Edu</span><span class="dot bloom"></span>
     </a>
-    <a class="tile tile-center" href="#pickelo" data-label="Pickelo — HooHacks">
+    <a class="tile tile-center" href="#pickelo" data-label="Pickelo">
       <span class="elo">1,612</span>
     </a>
     <a class="tile tile-center" href="#wit" data-label="wit">
@@ -106,7 +109,7 @@
       <ul class="points">
         <li>Built it end to end: SwiftUI client, Supabase/Postgres and Deno backend, Stripe Issuing, Connect and Identity.</li>
         <li>Security-first API in Postgres RPCs, hardened RLS, and fraud signals tuned to pooling-specific abuse.</li>
-        <li>Consent-driven UX that separates seeing a pool from spending it — merchant details redacted by default, step-up auth on risky actions.</li>
+        <li>Consent-driven UX that separates who can see a pool from who can spend from it. Merchant details are redacted by default, and risky actions need step-up auth.</li>
         <li>$1k+ raised, 100+ person pre-release waitlist, incorporated as a Delaware C-Corp.</li>
       </ul>
     </article>
@@ -119,7 +122,7 @@
           <li><span>file</span><span>YARA match in ~/Downloads</span><b class="md">medium</b></li>
           <li><span>cleanup</span><span>3.2 GB of caches</span><b>info</b></li>
         </ul>
-        <p class="explain">“This program accepts connections from other machines and isn't signed by a known developer. Quarantine it — you can restore it later.”</p>
+        <p class="explain">“This program accepts connections from other machines and isn't signed by a known developer. Quarantine it. You can restore it later.”</p>
       </div>
       <div class="meta">
         <div>
@@ -157,7 +160,7 @@
         </div>
         <h3>Pickelo</h3>
         <p class="sub">HooHacks · Mar 2026</p>
-        <p class="desc">Pickleball Elo platform built with a team of four: live ratings, win rate and streak analytics, matchmaking, and a court finder with fee and surface data.</p>
+        <p class="desc">Pickleball Elo platform built with a team of four. Live ratings, matchmaking, and a court finder with fees and surface types.</p>
         <p class="stack">TypeScript · JavaScript · Python · CSS</p>
       </article>
     </div>
@@ -175,31 +178,58 @@
           <p class="sub">Jan – Jun 2025 · React Native (Expo) · Azure</p>
         </div>
       </div>
-      <p class="desc">Flashcards you draw on. A mobile app where users sketch directly onto digital card sets, with user data stored in a NoSQL database on Microsoft Azure.</p>
+      <p class="desc">A mobile flashcard app you draw on. User data lives in a NoSQL database on Azure.</p>
     </article>
   </section>
 
-  <!-- more projects: dense list -->
-  <section id="more" class="list">
-    <h2 class="label">More projects</h2>
-    <ul>
-      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/vorssaint-utils">vorssaint-utils</a></b> — contributed a Paperclip crew card with animated agent avatars to an open-source macOS menu bar toolkit</span><span class="where">Swift</span></li>
-      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/kiro-local-routing-autocompact">Kiro local routing</a></b> — routes spec-coding tasks to a local Ollama model, escalating when tests fail, with auto-compact hooks</span><span class="where">Shell</span></li>
-      <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/priceCLI">priceCLI</a></b> — paste a wall of shopping links, get scraped sale prices and a total in the terminal</span><span class="where">Node.js</span></li>
-      <li><span class="when">2026</span><span class="what"><b><a href="https://pingpongcounter.matt-seo-6da.workers.dev/">Ping Pong Counter</a></b> — voice-controlled scoreboard with fuzzy matching for misheard commands, property-tested with fast-check</span><span class="where">TypeScript</span></li>
-      <li><span class="when">2024</span><span class="what"><b><a href="https://sstray.itch.io/tank-tycoon">Tank Tycoon</a></b> — aquarium tycoon game built in Godot with a classmate; upgrades, fish, SFX and music</span><span class="where">GDScript</span></li>
-    </ul>
+  <!-- AI-assisted engineering: the page's one dark band -->
+  <section id="ai" class="ai" aria-labelledby="ai-h">
+    <div class="ai-head">
+      <h2 id="ai-h">How I build<br>with <em>agents</em></h2>
+      <p>I use coding agents on nearly everything I build, from Flint to a Chrome extension to this site. Most of the work is deciding what they are allowed to ship.</p>
+    </div>
+
+    <div class="ai-org">
+      <p class="ai-num">8</p>
+      <p class="ai-cap">Claude Code skills I've written</p>
+      <p class="ai-body">Playbooks agents load on demand. <code>rootcause</code>, <code>proveit</code> and <code>securityscan</code> keep an agent honest about bugs, tests and security holes. <code>edgecase</code>, <code>deAI</code> and <code>de-ai-design</code> audit a UI before it ships. <code>deploy</code> and <code>forensics</code> encode Flint's production path.</p>
+    </div>
+
+    <dl class="ai-ways">
+      <dt>Agent teams</dt>
+      <dd>A Paperclip org of five agents on Claude, Codex and Gemini has worked 126 Flint issues. Money-path changes wait for the Security Engineer's review.</dd>
+      <dt>Spec first</dt>
+      <dd>Kiro's spec-driven workflow for EduAI. Local Ollama models handle routine tasks and hand off to a hosted model when tests fail.</dd>
+      <dt>Check by eye</dt>
+      <dd>Playwright over MCP screenshots UI changes so I review them by eye, and Context7 pulls current library docs instead of stale memory.</dd>
+      <dt>AI in the product</dt>
+      <dd>On-device Whisper for live subtitles, a local LLM that explains Oyster's scan results, and Gemini agents that write EduAI's courses.</dd>
+    </dl>
   </section>
 
-  <!-- experience: dense list -->
-  <section id="activities" class="list">
-    <h2 class="label">Experience &amp; activities</h2>
-    <ul>
-      <li><span class="when">Now</span><span class="what">Co-Founder, <b>Flint</b></span><span class="where">payflint.app</span></li>
-      <li><span class="when">2023–25</span><span class="what">Lead Team Member, <b>CyberPatriot</b> — Gold-tier national semifinalist; secured network configs in Cisco Packet Tracer under competition conditions</span><span class="where">Cisco</span></li>
-      <li><span class="when">2025–28</span><span class="what">B.S. Computer Science, <b>Virginia Tech</b> — GPA 3.76</span><span class="where">Blacksburg, VA</span></li>
-    </ul>
-  </section>
+  <!-- more projects + background, side by side -->
+  <div class="lists">
+    <section id="more" class="list">
+      <h2 class="label">More projects</h2>
+      <ul>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/vorssaint-utils">vorssaint-utils</a></b>Forked an open-source macOS menu bar toolkit and added a Paperclip crew card with animated agent avatars.</span><span class="where">Swift</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/kiro-local-routing-autocompact">Kiro local routing</a></b>Sends spec-coding tasks to a local Ollama model and escalates when tests fail.</span><span class="where">Shell</span></li>
+        <li><span class="when">2026</span><span class="what"><b>Live Subtitle Translator</b>Chrome extension that subtitles any tab in English, even when speakers switch languages. Whisper and OCR run on-device.</span><span class="where">JavaScript</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/priceCLI">priceCLI</a></b>Paste shopping links, get sale prices and a total in the terminal.</span><span class="where">Node.js</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://pingpongcounter.matt-seo-6da.workers.dev/">Ping Pong Counter</a></b>Voice-controlled scoreboard that forgives misheard commands. Property-tested with fast-check.</span><span class="where">TypeScript</span></li>
+        <li><span class="when">2024</span><span class="what"><b><a href="https://sstray.itch.io/tank-tycoon">Tank Tycoon</a></b>Aquarium tycoon game in Godot, built with a classmate.</span><span class="where">GDScript</span></li>
+      </ul>
+    </section>
+
+    <section id="activities" class="facts">
+      <h2>Background</h2>
+      <dl>
+        <dt>Virginia Tech</dt><dd>B.S. Computer Science, 2028. GPA 3.76.</dd>
+        <dt>CyberPatriot</dt><dd>Lead team member. Gold-tier national semifinalist, 2023–25.</dd>
+        <dt>Flint</dt><dd>Co-founder. Delaware C-Corp.</dd>
+      </dl>
+    </section>
+  </div>
 
   <!-- skills: hairline grid -->
   <section class="skills" aria-label="Skills">
@@ -207,6 +237,7 @@
     <div><h2>( Backend &amp; data )</h2><p>FastAPI · Postgres RPCs · Supabase · Deno · NoSQL (Azure) · client-server architecture</p></div>
     <div><h2>( Platforms )</h2><p>SwiftUI · React · React Native (Expo) · Node.js · Stripe APIs · Lottie · Azure</p></div>
     <div><h2>( Security )</h2><p>RLS hardening · step-up authentication · fraud detection · network configuration</p></div>
+    <div><h2>( AI tooling )</h2><p>Claude Code · Codex · Gemini · Kiro · Paperclip · MCP · Ollama</p></div>
   </section>
 </main>
 
