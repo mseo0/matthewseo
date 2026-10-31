@@ -47,9 +47,7 @@
     <div class="cell plus"></div>
     <p class="cell intro">Computer science at Virginia Tech. Co-founder of <a href="#flint">Flint</a>, a group money-pooling app for iOS.</p>
     <div class="cell"></div>
-    <div class="cell">
-      <svg class="glyph" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11h10M1 11V1M3 9l2-2 2 1 4-5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-    </div>
+    <div class="cell"></div>
 
     <div class="cell hint" aria-hidden="true">( click a + )</div>
     <div class="cell plus"></div>
@@ -70,7 +68,7 @@
       <span class="big">Edu</span><span class="dot bloom"></span>
     </a>
     <a class="tile tile-center" href="#pickelo" data-label="Pickelo">
-      <span class="elo">1,612</span>
+      <span class="elo">Elo</span>
     </a>
     <a class="tile tile-center" href="#wit" data-label="wit">
       <svg viewBox="0 0 120 40" class="scribble" aria-hidden="true"><path d="M4 28c10-18 18-20 22-8s8 14 14 0 10-16 16-4 6 14 14 4 12-14 18-6 8 10 16 4 10-6 12-4" fill="none" stroke="#e5484d" stroke-width="2.2" stroke-linecap="round"/></svg>
@@ -85,13 +83,11 @@
       <a href="https://github.com/mseo0">GitHub</a>
       <button class="copy" data-email="matt.seo19@gmail.com">Email</button>
       <a href="https://linkedin.com/in/matthew-seo">LinkedIn</a>
-      <span class="y">2026</span>
-    </div>
+          </div>
   </nav>
 
   <!-- work -->
-  <section id="work" class="work">
-    <h2 class="label">Selected work</h2>
+  <section id="work" class="work" aria-label="Work">
 
     <article id="flint" class="feature">
       <div class="frame frame-flint">
@@ -108,125 +104,80 @@
       </div>
       <ul class="points">
         <li>Built it end to end: SwiftUI client, Supabase/Postgres and Deno backend, Stripe Issuing, Connect and Identity.</li>
-        <li>Security-first API in Postgres RPCs, hardened RLS, and fraud signals tuned to pooling-specific abuse.</li>
-        <li>Consent-driven UX that separates who can see a pool from who can spend from it. Merchant details are redacted by default, and risky actions need step-up auth.</li>
+        <li>Postgres RPCs, row-level security and fraud checks built for shared money.</li>
+        <li>Seeing a pool and spending from it are separate permissions. Risky actions need extra verification.</li>
         <li>$1k+ raised, 100+ person pre-release waitlist, incorporated as a Delaware C-Corp.</li>
       </ul>
     </article>
 
-    <article id="oyster" class="card wide-left">
-      <div class="frame frame-oyster" aria-hidden="true">
-        <ul class="scan">
-          <li><span>process</span><span>unsigned binary listening on :4444</span><b class="hi">high</b></li>
-          <li><span>software</span><span>outdated package with known CVE</span><b class="md">medium</b></li>
-          <li><span>file</span><span>YARA match in ~/Downloads</span><b class="md">medium</b></li>
-          <li><span>cleanup</span><span>3.2 GB of caches</span><b>info</b></li>
-        </ul>
-        <p class="explain">“This program accepts connections from other machines and isn't signed by a known developer. Quarantine it. You can restore it later.”</p>
-      </div>
-      <div class="meta">
-        <div>
-          <h3><a href="https://github.com/mseo0/Oyster">Oyster</a></h3>
-          <p class="sub">Local antivirus · macOS &amp; Windows · 2026</p>
-        </div>
-        <span class="tag">Open source</span>
-      </div>
-      <p class="desc">An antivirus that never phones home. It scans files, running processes and installed software for vulnerabilities, then a local LLM explains each finding in plain English. Runs on an 8 GB laptop. Delete means a restorable quarantine.</p>
-      <p class="stack">Python · Electron · ClamAV · YARA · Ollama</p>
-    </article>
+    <div class="projects">
+      <article id="oyster">
+        <h3><a href="https://github.com/mseo0/Oyster">Oyster</a></h3>
+        <p class="sub">Local antivirus · macOS &amp; Windows · 2026 · Open source</p>
+        <p class="desc">An antivirus that never phones home. It scans files, processes and installed software, and a local LLM explains each finding in plain English.</p>
+        <p class="stack">Python · Electron · ClamAV · YARA · Ollama</p>
+      </article>
 
-    <div class="pair">
-      <article id="eduai" class="card">
-        <div class="frame frame-pipe" aria-hidden="true">
-          <ol class="pipe">
-            <li>Research</li><li>Content</li><li>Assessment</li><li class="critic">Critic</li><li>Formatter</li>
-          </ol>
-          <p class="sse">event: lesson_plan<br>data: {"unit": 1, "status": "streaming"}</p>
-        </div>
+      <article id="eduai">
         <h3>EduAI</h3>
         <p class="sub">VT Kiro Hackathon · Mar 2026</p>
-        <p class="desc">Multi-agent Gemini pipeline that turns a teacher's topic into lesson plans, quizzes, reading lists and slides. Agents run in parallel; a Critic reviews the output, streamed live over SSE.</p>
+        <p class="desc">Gemini agents turn a teacher's topic into lesson plans, quizzes, reading lists and slides.</p>
         <p class="stack">Python · FastAPI · Vite · Gemini API</p>
       </article>
 
-      <article id="pickelo" class="card">
-        <div class="frame frame-board" aria-hidden="true">
-          <table class="board">
-            <tr><td>1</td><td>J. Park</td><td>1,612</td><td class="up">+18</td></tr>
-            <tr><td>2</td><td>A. Reyes</td><td>1,588</td><td class="up">+6</td></tr>
-            <tr><td>3</td><td>M. Seo</td><td>1,541</td><td class="dn">−11</td></tr>
-            <tr><td>4</td><td>K. Liu</td><td>1,497</td><td class="up">+9</td></tr>
-          </table>
-        </div>
+      <article id="pickelo">
         <h3>Pickelo</h3>
         <p class="sub">HooHacks · Mar 2026</p>
-        <p class="desc">Pickleball Elo platform built with a team of four. Live ratings, matchmaking, and a court finder with fees and surface types.</p>
+        <p class="desc">Pickleball Elo ratings, matchmaking and a court finder. Built with a team of four.</p>
         <p class="stack">TypeScript · JavaScript · Python · CSS</p>
       </article>
-    </div>
 
-    <article id="wit" class="card wide">
-      <div class="frame frame-wit" aria-hidden="true">
-        <div class="flash"><span>mitochondria</span>
-          <svg viewBox="0 0 200 60"><path d="M10 40c20-30 40-30 50-6s30 20 46-4 34-20 50 4 24 10 34-10" fill="none" stroke="#e5484d" stroke-width="2.5" stroke-linecap="round"/><circle cx="60" cy="34" r="22" fill="none" stroke="#1a5681" stroke-width="2"/></svg>
-        </div>
-        <div class="flash back"></div>
-      </div>
-      <div class="meta">
-        <div>
-          <h3>wit</h3>
-          <p class="sub">Jan – Jun 2025 · React Native (Expo) · Azure</p>
-        </div>
-      </div>
-      <p class="desc">A mobile flashcard app you draw on. User data lives in a NoSQL database on Azure.</p>
-    </article>
+      <article id="wit">
+        <h3>wit</h3>
+        <p class="sub">Jan – Jun 2025</p>
+        <p class="desc">A flashcard app you draw on.</p>
+        <p class="stack">React Native (Expo) · Azure</p>
+      </article>
+    </div>
   </section>
 
   <!-- AI-assisted engineering: the page's one dark band -->
   <section id="ai" class="ai" aria-labelledby="ai-h">
-    <div class="ai-head">
-      <h2 id="ai-h">How I build<br>with <em>agents</em></h2>
-      <p>I use coding agents on nearly everything I build, from Flint to a Chrome extension to this site. Most of the work is deciding what they are allowed to ship.</p>
-    </div>
+    <h2 id="ai-h">How I build with AI</h2>
 
-    <div class="ai-org">
-      <p class="ai-num">8</p>
-      <p class="ai-cap">Claude Code skills I've written</p>
-      <p class="ai-body">Playbooks agents load on demand. <code>rootcause</code>, <code>proveit</code> and <code>securityscan</code> keep an agent honest about bugs, tests and security holes. <code>edgecase</code>, <code>deAI</code> and <code>de-ai-design</code> audit a UI before it ships. <code>deploy</code> and <code>forensics</code> encode Flint's production path.</p>
-    </div>
+    <div class="ai-body">
+      <p>I use AI coding tools on most of my projects, including this site. They write a lot of the code. I read it, test it, and decide what ships.</p>
 
-    <dl class="ai-ways">
-      <dt>Agent teams</dt>
-      <dd>A Paperclip org of five agents on Claude, Codex and Gemini has worked 126 Flint issues. Money-path changes wait for the Security Engineer's review.</dd>
-      <dt>Spec first</dt>
-      <dd>Kiro's spec-driven workflow for EduAI. Local Ollama models handle routine tasks and hand off to a hosted model when tests fail.</dd>
-      <dt>Check by eye</dt>
-      <dd>Playwright over MCP screenshots UI changes so I review them by eye, and Context7 pulls current library docs instead of stale memory.</dd>
-      <dt>AI in the product</dt>
-      <dd>On-device Whisper for live subtitles, a local LLM that explains Oyster's scan results, and Gemini agents that write EduAI's courses.</dd>
-    </dl>
+      <dl class="ai-ways">
+        <dt>Tools</dt>
+        <dd><a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener">Claude Code</a>, <a href="https://openai.com/codex/" target="_blank" rel="noopener">Codex</a>, <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> and <a href="https://kiro.dev" target="_blank" rel="noopener">Kiro</a>.</dd>
+        <dt>Skills</dt>
+        <dd>I wrote 8 Claude Code skills for jobs I repeat: finding the real cause of a bug, checking that tests actually ran, security review, and fixing UI that looks generated.</dd>
+        <dt>On Flint</dt>
+        <dd>A team of agents has worked through 126 of our issues. Anything that touches payments gets a security review first.</dd>
+        <dt>Testing</dt>
+        <dd><a href="https://playwright.dev" target="_blank" rel="noopener">Playwright</a> screenshots UI changes so I can check them before they merge.</dd>
+      </dl>
+    </div>
   </section>
 
   <!-- more projects + background, side by side -->
   <div class="lists">
-    <section id="more" class="list">
-      <h2 class="label">More projects</h2>
+    <section id="more" class="list" aria-label="More projects">
       <ul>
-        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/vorssaint-utils">vorssaint-utils</a></b>Forked an open-source macOS menu bar toolkit and added a Paperclip crew card with animated agent avatars.</span><span class="where">Swift</span></li>
-        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/kiro-local-routing-autocompact">Kiro local routing</a></b>Sends spec-coding tasks to a local Ollama model and escalates when tests fail.</span><span class="where">Shell</span></li>
-        <li><span class="when">2026</span><span class="what"><b>Live Subtitle Translator</b>Chrome extension that subtitles any tab in English, even when speakers switch languages. Whisper and OCR run on-device.</span><span class="where">JavaScript</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/vorssaint-utils">vorssaint-utils</a></b>Added an agent status card to an open-source macOS menu bar toolkit.</span><span class="where">Swift</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/kiro-local-routing-autocompact">Kiro local routing</a></b>Runs Kiro tasks on a local model and switches to a hosted one when tests fail.</span><span class="where">Shell</span></li>
+        <li><span class="when">2026</span><span class="what"><b>Live Subtitle Translator</b>Chrome extension that subtitles any tab in English, on-device.</span><span class="where">JavaScript</span></li>
         <li><span class="when">2026</span><span class="what"><b><a href="https://github.com/mseo0/priceCLI">priceCLI</a></b>Paste shopping links, get sale prices and a total in the terminal.</span><span class="where">Node.js</span></li>
-        <li><span class="when">2026</span><span class="what"><b><a href="https://pingpongcounter.matt-seo-6da.workers.dev/">Ping Pong Counter</a></b>Voice-controlled scoreboard that forgives misheard commands. Property-tested with fast-check.</span><span class="where">TypeScript</span></li>
+        <li><span class="when">2026</span><span class="what"><b><a href="https://pingpongcounter.matt-seo-6da.workers.dev/">Ping Pong Counter</a></b>Voice-controlled scoreboard.</span><span class="where">TypeScript</span></li>
         <li><span class="when">2024</span><span class="what"><b><a href="https://sstray.itch.io/tank-tycoon">Tank Tycoon</a></b>Aquarium tycoon game in Godot, built with a classmate.</span><span class="where">GDScript</span></li>
       </ul>
     </section>
 
-    <section id="activities" class="facts">
-      <h2>Background</h2>
+    <section id="activities" class="facts" aria-label="Background">
       <dl>
         <dt>Virginia Tech</dt><dd>B.S. Computer Science, 2028. GPA 3.76.</dd>
         <dt>CyberPatriot</dt><dd>Lead team member. Gold-tier national semifinalist, 2023–25.</dd>
-        <dt>Flint</dt><dd>Co-founder. Delaware C-Corp.</dd>
       </dl>
     </section>
   </div>
@@ -237,7 +188,6 @@
     <div><h2>( Backend &amp; data )</h2><p>FastAPI · Postgres RPCs · Supabase · Deno · NoSQL (Azure) · client-server architecture</p></div>
     <div><h2>( Platforms )</h2><p>SwiftUI · React · React Native (Expo) · Node.js · Stripe APIs · Lottie · Azure</p></div>
     <div><h2>( Security )</h2><p>RLS hardening · step-up authentication · fraud detection · network configuration</p></div>
-    <div><h2>( AI tooling )</h2><p>Claude Code · Codex · Gemini · Kiro · Paperclip · MCP · Ollama</p></div>
   </section>
 </main>
 
@@ -250,14 +200,13 @@
       <a href="#top">To top</a>
     </div>
   </div>
-  <p class="foot-name" aria-hidden="true">Matthew Seo</p>
-  <p class="foot-fine"><span>© 2026 Matthew Seo</span><span>Fairfax, VA · Blacksburg, VA</span></p>
+  <p class="foot-fine"><span>© 2026 Matthew Seo</span></p>
 </footer>
 
 <script>
   // live ET clock
   const clock = document.getElementById('clock');
-  const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+  const fmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true });
   const tick = () => { clock.textContent = fmt.format(new Date()) + ' ET'; };
   tick(); setInterval(tick, 1000);
 
