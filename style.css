@@ -75,7 +75,7 @@ img { display: block; max-width: 100%; }
     linear-gradient(var(--line), var(--line)) 0 50% / 100% 1px no-repeat,
     #fdfdfd;
 }
-.icon { width: 21%; height: auto; }
+.icon { width: 34%; height: auto; }
 .mono-stack { font: 11px/1.7 var(--mono); color: var(--text-2); display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .vlabel {
   writing-mode: vertical-rl;
@@ -155,6 +155,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.06em;
   white-space: nowrap;
 }
+.tile .wm { position: absolute; left: 6%; bottom: 14%; width: 56%; height: auto; }
 .tile .dot { position: absolute; width: 46%; aspect-ratio: 1; border-radius: 50%; right: -12%; top: 50%; transform: translateY(-50%); }
 .tile .dot.night { background: var(--night); }
 .tile .dot.bloom { background: radial-gradient(circle at 35% 35%, var(--bloom-2), var(--bloom-1)); }
